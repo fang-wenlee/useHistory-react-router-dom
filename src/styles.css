@@ -2,3 +2,19 @@
   font-family: sans-serif;
   text-align: center;
 }
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 10vh;
+  background-color: blueviolet;
+}
+
+.nav-links {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style-type: none;
+}
