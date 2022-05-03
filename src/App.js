@@ -1,6 +1,7 @@
 import "./styles.css";
 
-import PreTask from "./component/pretask";
+// import PreTask from "./component/pretask";
+import ControlTask from "./component/controlParent";
 import Patch from "./component/patch";
 import PostTask from "./component/posttask";
 import Nav from "./component/nav";
@@ -11,9 +12,9 @@ export default function App() {
     <div className="App">
       <Nav />
       <Routes>
-        <Route path="/pretask" component={PreTask} />
-        <Route path="/patch" component={Patch} />
-        <Route path="/posttask" component={PostTask} />
+        <Route path="/controltask" element={<ControlTask />} />
+        <Route path="/patch" element={<Patch />} />
+        <Route path="/posttask" element={<PostTask />} />
       </Routes>
     </div>
   );
